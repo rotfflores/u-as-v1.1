@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reservar · Nube Nácar Nail Atelier</title>
+<meta name="description" content="Reserva tu cita en tres pasos. Te confirmamos por WhatsApp.">
+<meta name="theme-color" content="#f7f2ec">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2040%2048%22%3E%3Crect%20width%3D%2240%22%20height%3D%2248%22%20fill%3D%22%23f7f2ec%22%2F%3E%3Cpath%20d%3D%22M6%2046V20a14%2014%200%200%201%2028%200v26%22%20fill%3D%22none%22%20stroke%3D%22%232a221e%22%20stroke-width%3D%222.4%22%2F%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2215%22%20r%3D%224%22%20fill%3D%22%23c99a90%22%2F%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="assets/css/estilos.css">
+<script defer src="assets/js/datos.js"></script>
+<script defer src="assets/js/comun.js"></script>
+<script defer src="assets/js/anim.js"></script>
+<script defer src="assets/js/reservar.js"></script>
+</head>
+<body class="page-reservar">
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<div class="page-veil" aria-hidden="true"><span class="mark">Nube <em>Nácar</em></span></div>
+<p class="bar">Garantía de 7 días en cada set<span class="bar-more">&nbsp;· Kit esterilizado frente a ti</span></p>
+<header class="header" id="header">
+  <div class="wrap header-in">
+    <nav class="nav" aria-label="Principal">
+      <a href="servicios.html">Servicios</a>
+      <a href="inspiracion.html">Inspiración</a>
+      <a href="estudio.html">Estudio</a>
+    </nav>
+    <a class="logo" href="index.html" aria-label="Nube Nácar Nail Atelier, inicio"><span class="logo-word">Nube Nácar</span><span class="logo-sub">nail atelier</span></a>
+    <nav class="nav nav-r" aria-label="Reservas">
+      <a href="reservar.html#visitanos">Visítanos</a>
+      <a class="btn btn-solid btn-sm" href="reservar.html" aria-current="page">Reservar</a>
+    </nav>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="overlay"><span class="txt">Menú</span><i aria-hidden="true"></i></button>
+  </div>
+</header>
+<div class="overlay" id="overlay" inert>
+  <nav aria-label="Menú"><ol>
+    <li><a href="index.html" style="--i:0"><span>01</span>Inicio</a></li>
+    <li><a href="servicios.html" style="--i:1"><span>02</span>Servicios</a></li>
+    <li><a href="inspiracion.html" style="--i:2"><span>03</span>Inspiración</a></li>
+    <li><a href="estudio.html" style="--i:3"><span>04</span>Estudio</a></li>
+    <li><a href="reservar.html" style="--i:4" aria-current="page"><span>05</span>Reservar</a></li>
+  </ol></nav>
+  <div class="overlay-foot"><span class="eyebrow">Visítanos</span><p>Av. de las Nubes 214, local 3 · Jardines del Cielo</p><p>(555) 214 0099 · Lun a sáb 10:00 – 20:00</p></div>
+</div>
+
+<main id="contenido">
+<section class="page-head">
+    <div class="wrap page-head-grid">
+      <div>
+        <nav class="crumbs" aria-label="Ruta"><a href="index.html">Inicio</a><span aria-hidden="true">/</span><span aria-current="page">Reservar</span></nav>
+        <h1>Reserva tu <em>momento</em></h1>
+        <p class="lede">Tres pasos y listo. Te confirmamos por WhatsApp y te mandamos un recordatorio un día antes. Próxima cita libre: <b data-next-slot>Mañana, 11:30</b>.</p>
+      </div>
+      <div class="arch-wrap">
+        <span class="arch-line" aria-hidden="true"></span>
+        <div class="arch" style="background-image:url(assets/img/cielo.jpg)">
+        <video data-auto muted loop playsinline preload="metadata" poster="assets/img/cielo.jpg" disablepictureinpicture aria-hidden="true">
+          <source src="assets/video/cielo.mp4" type="video/mp4">
+          <source src="assets/video/cielo.webm" type="video/webm">
+        </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-paper" id="reserva" aria-label="Formulario de reserva">
+    <div class="wrap booking">
+      <div>
+        <ol class="stepper" id="stepper">
+          <li><b>i.</b>Servicio</li>
+          <li><b>ii.</b>Fecha y hora</li>
+          <li><b>iii.</b>Tus datos</li>
+        </ol>
+        <form id="booking" novalidate>
+          <p class="tone-pick" id="tone-pick" hidden><i aria-hidden="true"></i><span>Tono elegido: <b></b></span></p>
+          <fieldset class="fstep">
+            <legend>¿Qué te hacemos?</legend>
+            <div><span class="group-label">Servicio</span><div class="choices" id="svc-choices"></div></div>
+            <div><span class="group-label">Extras (opcional)</span><div class="choices extras" id="extra-choices"></div></div>
+          </fieldset>
+          <fieldset class="fstep" hidden>
+            <legend>¿Cuándo vienes?</legend>
+            <div class="fields">
+              <div class="field"><label for="f-date">Fecha</label><input id="f-date" name="fecha" type="date" required></div>
+              <div class="field"><label for="f-artist">Nail artist</label><select id="f-artist" name="artista"><option value="">Sin preferencia</option></select></div>
+            </div>
+            <div><span class="group-label" id="slots-lbl">Hora</span><div class="choices slots" id="slots" role="radiogroup" aria-labelledby="slots-lbl"></div><p class="err" id="slot-err" hidden>Elige una hora disponible.</p></div>
+          </fieldset>
+          <fieldset class="fstep" hidden>
+            <legend>¿Cómo te contactamos?</legend>
+            <div class="fields">
+              <div class="field"><label for="f-name">Nombre</label><input id="f-name" name="nombre" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="f-phone">WhatsApp</label><input id="f-phone" name="telefono" type="tel" inputmode="tel" autocomplete="tel" placeholder="55 1234 5678" pattern="[0-9 +\-\(\)]{10,}" required></div>
+              <div class="field full"><label for="f-notes">Notas o referencia</label><textarea id="f-notes" name="notas" placeholder="Forma, largo, tono o el diseño que te gustó"></textarea></div>
+            </div>
+            <p class="hint">Solo usamos tu número para confirmar la cita.</p>
+          </fieldset>
+          <div class="step-nav">
+            <button class="btn btn-line" type="button" id="back" hidden>Atrás</button>
+            <span></span>
+            <button class="btn btn-solid" type="button" id="next">Continuar <svg viewBox="0 0 18 10" aria-hidden="true"><path d="M0 5h16M12 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.1"/></svg></button>
+            <button class="btn btn-solid" type="submit" id="submit" hidden>Solicitar cita <svg viewBox="0 0 18 10" aria-hidden="true"><path d="M0 5h16M12 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.1"/></svg></button>
+          </div>
+        </form>
+        <div class="done" id="done" hidden tabindex="-1">
+          <p class="eyebrow">Solicitud lista</p>
+          <h3 id="done-title">Gracias</h3>
+          <p id="done-text"></p>
+          <p class="demo">Esta página es una plantilla de demostración: no se envió ningún dato. Conecta este formulario a tu agenda o a WhatsApp Business.</p>
+          <button class="u-link" type="button" id="again" style="border:0;cursor:pointer">Hacer otra reserva</button>
+        </div>
+      </div>
+      <aside class="summary" aria-live="polite">
+        <h3>Tu cita</h3>
+        <dl class="sum-list">
+          <div><dt>Servicio</dt><dd id="s-service">Por elegir</dd></div>
+          <div><dt>Duración</dt><dd id="s-time">—</dd></div>
+          <div><dt>Con</dt><dd id="s-artist">Sin preferencia</dd></div>
+          <div><dt>Día</dt><dd id="s-date">—</dd></div>
+          <div><dt>Hora</dt><dd id="s-slot">Por elegir</dd></div>
+        </dl>
+        <div class="sum-total"><span>Total estimado</span><b id="s-total">$0</b></div>
+        <p class="sum-note">Pagas en el estudio al terminar. Cancelación sin costo hasta 24 horas antes.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" id="preguntas" aria-labelledby="t-faq">
+    <div class="wrap">
+      <div class="head-center">
+        <p class="eyebrow">Preguntas frecuentes</p>
+        <h2 id="t-faq">Antes de tu <em>primera cita</em></h2>
+      </div>
+      <div class="faq">
+        <details open><summary>¿Cuánto dura el gel semipermanente?<i aria-hidden="true"></i></summary><p>De 2 a 3 semanas, según qué tan rápido crece tu uña y tu rutina. Te recomendamos un relleno o un retiro a las 3 semanas.</p></details>
+        <details><summary>¿Las extensiones dañan la uña natural?<i aria-hidden="true"></i></summary><p>No, si se aplican y se retiran bien. Preparamos la uña sin limar de más y el retiro siempre se hace en el estudio, nunca arrancando el producto.</p></details>
+        <details><summary>¿Qué pasa si se me levanta una uña?<i aria-hidden="true"></i></summary><p>Tienes 7 días de garantía y la reparamos sin costo. Escríbenos con una foto y te apartamos un espacio.</p></details>
+        <details><summary>¿Puedo llevar mi propio diseño?<i aria-hidden="true"></i></summary><p>Claro. Trae tus fotos de referencia: en el diagnóstico te decimos el tiempo y el precio exactos.</p></details>
+        <details><summary>¿Cuál es la política de cancelación?<i aria-hidden="true"></i></summary><p>Puedes cambiar o cancelar sin costo hasta 24 horas antes. Con menos tiempo cobramos el 30% del servicio.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-sand" id="visitanos" aria-labelledby="t-visit">
+    <div class="wrap visit">
+      <div>
+        <p class="eyebrow">Visítanos</p>
+        <h2 id="t-visit" style="margin-block:24px 48px">Te esperamos en <em>Jardines del Cielo</em></h2>
+        <div class="visit-info">
+          <div><h3>Dirección</h3><address><span class="big">Av. de las Nubes 214, local 3</span>Col. Jardines del Cielo. Estacionamiento gratuito en la plaza.</address></div>
+          <div><h3>Contacto</h3>
+            <p class="copy-row"><b id="phone">(555) 214 0099</b><button class="copy" type="button" data-copy="phone">Copiar</button></p>
+            <p class="copy-row"><b id="mail">hola@nubenacar.com</b><button class="copy" type="button" data-copy="mail">Copiar</button></p>
+            <p>@nubenacar</p>
+          </div>
+          <div style="grid-column:1/-1"><h3>Horario</h3><table class="hours" id="hours"><tbody></tbody></table></div>
+        </div>
+      </div>
+      <div class="map reveal" role="img" aria-label="Mapa ilustrado: el estudio está sobre Av. de las Nubes, frente al parque">
+        <svg viewBox="0 0 400 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="400" height="320" fill="#fbf8f4"/>
+          <path d="M-10 236C80 214 150 262 236 240s128-66 180-56" fill="none" stroke="#e5d9cb" stroke-width="18" stroke-linecap="round"/>
+          <rect x="30" y="30" width="104" height="72" fill="none" stroke="#dcd0c2"/>
+          <rect x="268" y="36" width="104" height="60" fill="none" stroke="#dcd0c2"/>
+          <g fill="none" stroke="#2a221e" stroke-opacity=".5"><path d="M-10 132H410"/><path d="M200 -10V330"/><path d="M-10 40 410 300" stroke-opacity=".25"/><path d="M90 -10V330M318 -10V330M-10 288H410" stroke-opacity=".2"/></g>
+          <g font-family="Jost, sans-serif" font-size="8.5" letter-spacing="2.4" fill="#7f7167"><text x="16" y="126">AV. DE LAS NUBES</text><text x="52" y="70">PARQUE</text><text x="300" y="70">PLAZA</text></g>
+          <circle cx="238" cy="150" r="30" fill="none" stroke="#b39468" stroke-opacity=".6"/>
+          <path d="M226 168V150a12 12 0 0 1 24 0v18Z" fill="#2a221e"/><circle cx="238" cy="148" r="3.5" fill="#c99a90"/>
+        </svg>
+        <p class="map-tag"><b>Nube Nácar</b>A 3 minutos del metro Jardines</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p class="footer-word" aria-hidden="true">Nube <em>Nácar</em></p>
+    <div class="footer-grid">
+      <div><h4>Visítanos</h4><ul><li>Av. de las Nubes 214, local 3</li><li>Col. Jardines del Cielo</li><li><a href="reservar.html#visitanos">Cómo llegar</a></li></ul></div>
+      <div><h4>Horario</h4><ul><li>Lun a jue · 10:00 – 20:00</li><li>Vie · 10:00 – 21:00</li><li>Sáb · 9:00 – 19:00</li><li>Dom · 10:00 – 15:00</li></ul></div>
+      <div><h4>Explora</h4><ul><li><a href="servicios.html">La carta</a></li><li><a href="inspiracion.html">Inspiración</a></li><li><a href="estudio.html">El estudio</a></li><li><a href="reservar.html#preguntas">Preguntas</a></li></ul></div>
+      <div class="news">
+        <h4>Carta de temporada</h4>
+        <p>Recibe los tonos nuevos y las fechas libres antes que nadie.</p>
+        <form data-news novalidate><input id="news-mail" type="email" placeholder="Tu correo" autocomplete="email" required aria-label="Tu correo"><button type="submit">Suscribirme</button></form>
+        <p class="ok" hidden>Gracias. (Demostración: no se guardó ningún dato.)</p>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year>2026</span> Nube Nácar Nail Atelier · (555) 214 0099 · hola@nubenacar.com</span><span>Plantilla de demostración con contenido ficticio.</span></div>
+  </div>
+</footer>
+
+<button class="motion-btn" id="motion-btn" type="button" aria-pressed="true">
+  <svg class="pause" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2v8M8.5 2v8" stroke="currentColor" stroke-width="1.4"/></svg><svg class="play" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.8 10 6 3 10.2Z" fill="currentColor"/></svg>
+  <span class="txt">Pausar video</span>
+</button>
+<div class="toast" id="toast" role="status"></div>
+</body>
+</html>

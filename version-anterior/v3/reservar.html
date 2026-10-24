@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reservar cita · Nube Nácar Nail Studio</title>
+<meta name="description" content="Elige servicio, día y hora. Te confirmamos por WhatsApp.">
+<meta name="theme-color" content="#c9c0ec">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20d%3D%22M20%2035C8%2027%203.5%2021%203.5%2014.2%203.5%209%207.4%205%2012.3%205c3.3%200%205.9%201.8%207.7%204.4C21.8%206.8%2024.4%205%2027.7%205c4.9%200%208.8%204%208.8%209.2C36.5%2021%2032%2027%2020%2035Z%22%20fill%3D%22%23ffd6e7%22%20stroke%3D%22%23d6246e%22%20stroke-width%3D%222.6%22%2F%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script defer src="assets/js/data.js"></script>
+<script defer src="assets/js/nails.js"></script>
+<script defer src="assets/js/main.js"></script>
+<script defer src="assets/js/reservar.js"></script>
+</head>
+<body class="page-reservar">
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<!-- Fondo: tu video en loop, fijo detrás de todo el sitio -->
+<div class="bg" aria-hidden="true">
+  <video id="bg-video" muted loop playsinline preload="auto" poster="assets/img/fondo.jpg" disablepictureinpicture>
+    <source src="assets/video/fondo.mp4" type="video/mp4">
+    <source src="assets/video/fondo.webm" type="video/webm">
+  </video>
+</div>
+
+<header class="topbar" id="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="index.html" aria-label="Nube Nácar Nail Studio, inicio">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="bti" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f07fbd"/><stop offset=".35" stop-color="#7fd3ef"/><stop offset=".65" stop-color="#f2cf6a"/><stop offset="1" stop-color="#9b7cf2"/></linearGradient><radialGradient id="btf" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#fff"/><stop offset=".6" stop-color="#ffe9f4"/><stop offset="1" stop-color="#e6d6ff"/></radialGradient></defs><path d="M20 35C8 27 3.5 21 3.5 14.2 3.5 9 7.4 5 12.3 5c3.3 0 5.9 1.8 7.7 4.4C21.8 6.8 24.4 5 27.7 5c4.9 0 8.8 4 8.8 9.2C36.5 21 32 27 20 35Z" fill="url(#btf)" stroke="#22163b" stroke-width="2"/><path d="M20 31.5C10.5 25 7 20.2 7 14.6 7 11 9.6 8.4 12.6 8.4" fill="none" stroke="url(#bti)" stroke-width="2.6" stroke-linecap="round"/><path d="M11 13c.8-1.6 2-2.4 3.6-2.4" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg>
+      <span><span class="brand-name">Nube Nácar</span><span class="brand-sub">Nail Studio</span></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="disena.html">Diseña tu set</a>
+      <a href="nosotras.html">Nosotras</a>
+      <a class="btn btn-pink" href="reservar.html" aria-current="page">Reservar cita</a>
+    </nav>
+    <a class="btn btn-pink btn-sm" href="reservar.html" aria-current="page">Reservar cita</a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="contenido">
+<section class="page-hero" data-sky>
+    <div class="page-hero-grid">
+      <div class="page-hero-card">
+        <nav class="crumbs" aria-label="Ruta"><a href="index.html">Inicio</a><span aria-hidden="true">/</span><span aria-current="page">Reservar</span></nav>
+        <h1>Aparta tu lugar en <span class="hl">un minuto</span></h1>
+        <p class="lede">Elige servicio, día y hora. Te confirmamos por WhatsApp y te mandamos un recordatorio un día antes.</p>
+        <div class="facts"><span class="fact" style="--c:var(--mint-soft)">Próximo libre: <b data-next-slot>Mañana · 10:00</b></span><span class="fact" style="--c:var(--pink-soft)">Cancelación sin costo hasta 24 h antes</span></div>
+      </div>
+      <div class="page-hero-art float-set" data-nails="bailarina media leche brillo babyboomer" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="panel" id="reservar" aria-labelledby="t-reservar">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Reservar</p>
+        <h2 id="t-reservar">Tu cita, <span class="hl pink">a tu manera</span></h2>
+      </div>
+      <div class="booking card">
+        <form class="form" id="booking-form" novalidate>
+          <div class="design-note" id="design-note" hidden>
+            <span class="mini-set" id="design-set" aria-hidden="true"></span>
+            <span>Tu diseño: <b id="design-text"></b>. <a href="disena.html">Cambiarlo</a></span>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="f-service">Servicio</label><select id="f-service" name="servicio" required></select></div>
+            <div class="field"><label for="f-artist">Nail artist</label><select id="f-artist" name="artista"><option value="">Sin preferencia</option></select></div>
+          </div>
+          <div class="field">
+            <span class="lbl" id="extras-lbl">Extras</span>
+            <div class="chips" role="group" aria-labelledby="extras-lbl" id="extras"></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="f-date">Fecha</label><input id="f-date" name="fecha" type="date" required></div>
+            <div class="field">
+              <span class="lbl" id="slots-lbl">Hora</span>
+              <div class="chips" role="radiogroup" aria-labelledby="slots-lbl" id="slots"></div>
+              <span class="err" id="slot-err" hidden>Elige una hora disponible.</span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="f-name">Nombre</label><input id="f-name" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre" required></div>
+            <div class="field">
+              <label for="f-phone">WhatsApp</label>
+              <input id="f-phone" name="telefono" type="tel" autocomplete="tel" inputmode="tel" placeholder="55 1234 5678" pattern="[0-9 +\-\(\)]{10,}" required>
+              <span class="hint">10 dígitos. Solo lo usamos para tu cita.</span>
+            </div>
+          </div>
+          <div class="field"><label for="f-notes">Notas o referencia</label><textarea id="f-notes" name="notas" placeholder="Forma, largo, colores o el diseño que te gustó"></textarea></div>
+          <div class="form-foot"><button class="btn btn-pink" type="submit">Solicitar cita <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><span class="hint">Pagas en el salón al terminar.</span></div>
+        </form>
+        <aside class="summary" id="summary" aria-live="polite">
+          <h3>Tu cita</h3>
+          <dl class="sum-list">
+            <div><dt>Servicio</dt><dd id="s-service">—</dd></div>
+            <div><dt>Duración</dt><dd id="s-time">—</dd></div>
+            <div><dt>Con</dt><dd id="s-artist">Sin preferencia</dd></div>
+            <div><dt>Día</dt><dd id="s-date">—</dd></div>
+            <div><dt>Hora</dt><dd id="s-slot">Por elegir</dd></div>
+          </dl>
+          <div class="sum-total"><span>Total estimado</span><b id="s-total">$0</b></div>
+          <div class="sum-note"><p>Llega 5 minutos antes.</p><p>Si traes gel de otro salón, agenda también el retiro.</p></div>
+          <div class="done" id="done" hidden>
+            <b id="done-title">Solicitud lista</b>
+            <p id="done-text"></p>
+            <p class="demo">Esta página es una plantilla de demostración: no se envió ningún dato. Conecta este formulario a tu agenda o a WhatsApp Business.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel lilac" id="preguntas" aria-labelledby="t-faq">
+    <div class="wrap faq-wrap">
+      <div class="sec-head">
+        <p class="eyebrow lilac">Preguntas frecuentes</p>
+        <h2 id="t-faq">Antes de tu <span class="hl">primera cita</span></h2>
+        <p class="sec-lede">Si tu duda no está aquí, escríbenos por WhatsApp y te respondemos en horario de atención.</p>
+      </div>
+      <div class="faq card">
+        <details open><summary>¿Cuánto dura el gel semipermanente?</summary><p>De 2 a 3 semanas, según qué tan rápido crece tu uña y tu rutina diaria. Te recomendamos un relleno o un retiro a las 3 semanas.</p></details>
+        <details><summary>¿Las extensiones dañan la uña natural?</summary><p>No, si se aplican y se retiran bien. Preparamos la uña sin limar de más, y el retiro siempre se hace en el salón, nunca arrancando el producto.</p></details>
+        <details><summary>¿Qué pasa si se me levanta o se rompe una uña?</summary><p>Tienes 7 días de garantía y la reparamos sin costo. Solo escríbenos con una foto para apartarte un espacio.</p></details>
+        <details><summary>¿Puedo llevar mi propio diseño?</summary><p>Claro. Trae capturas o fotos de referencia. En el diagnóstico te decimos el tiempo y el precio exactos antes de empezar.</p></details>
+        <details><summary>¿Cuál es la política de cancelación?</summary><p>Puedes cambiar o cancelar sin costo hasta 24 horas antes. Con menos tiempo cobramos el 30% del servicio reservado.</p></details>
+        <details><summary>¿Qué formas de pago aceptan?</summary><p>Efectivo, tarjeta de débito o crédito y transferencia. Las tarjetas de regalo se pueden usar en cualquier servicio.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" id="contacto" aria-labelledby="t-contacto">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow butter">Visítanos</p>
+        <h2 id="t-contacto">Te esperamos en <span class="hl">Jardines del Cielo</span></h2>
+      </div>
+      <div class="contact">
+        <div class="info card rise">
+          <div class="contact-lines">
+            <div><h3>Dirección</h3><address><span class="big">Av. de las Nubes 214, local 3</span><span>Col. Jardines del Cielo · Estacionamiento gratuito en plaza</span></address></div>
+            <div class="cl"><span>Teléfono y WhatsApp</span><div class="cl-row"><b id="phone">(555) 214 0099</b><button class="copy" type="button" data-copy="phone">Copiar</button></div></div>
+            <div class="cl"><span>Correo</span><div class="cl-row"><b id="mail">hola@nubenacar.com</b><button class="copy" type="button" data-copy="mail">Copiar</button></div></div>
+            <div class="cl"><span>Instagram y TikTok</span><div class="cl-row"><b>@nubenacar</b></div></div>
+          </div>
+          <div><h3>Horario</h3><table class="hours" id="hours"><tbody></tbody></table></div>
+        </div>
+        <div class="map card rise" role="img" aria-label="Mapa ilustrado de la ubicación del salón">
+          <svg viewBox="0 0 400 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="400" height="320" fill="#f6f0fb"/>
+            <path d="M-10 230C80 210 140 260 230 236s130-70 190-58" fill="none" stroke="#cfe0f2" stroke-width="22" stroke-linecap="round"/>
+            <rect x="34" y="34" width="96" height="70" rx="14" fill="#dcf5e9"/>
+            <rect x="270" y="40" width="100" height="56" rx="14" fill="#fff4d3"/>
+            <g fill="none" stroke="#fff" stroke-linecap="round"><path d="M-10 128H410" stroke-width="16"/><path d="M200 -10V330" stroke-width="16"/><path d="M-10 40 410 300" stroke-width="10"/><path d="M90 -10V330M320 -10V330" stroke-width="8"/><path d="M-10 290H410" stroke-width="8"/></g>
+            <g font-family="DM Sans, system-ui, sans-serif" font-size="10" font-weight="700" fill="#6a6081" letter-spacing=".08em"><text x="24" y="122">AV. DE LAS NUBES</text><text x="40" y="74">PARQUE</text><text x="282" y="72">PLAZA</text></g>
+            <circle cx="236" cy="150" r="40" fill="#d6246e" opacity=".14"/>
+            <path d="M236 170c-15-12-23-20-23-29 0-6 4.6-10.5 10-10.5 5 0 8 2.6 13 7.4 5-4.8 8-7.4 13-7.4 5.4 0 10 4.5 10 10.5 0 9-8 17-23 29Z" fill="#d6246e" stroke="#22163b" stroke-width="2"/>
+          </svg>
+          <div class="map-card"><span><b>Nube Nácar Nail Studio</b><span>A 3 minutos del metro Jardines</span></span><span class="pill">Local 3 · planta baja</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-cta">
+      <p>¿Lista para <span class="pinky">brillar</span>?</p>
+      <a class="btn" href="reservar.html">Reservar cita <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="footer-in">
+      <div>
+        <a class="brand" href="index.html"><svg viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="bfi" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f07fbd"/><stop offset=".35" stop-color="#7fd3ef"/><stop offset=".65" stop-color="#f2cf6a"/><stop offset="1" stop-color="#9b7cf2"/></linearGradient><radialGradient id="bff" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#fff"/><stop offset=".6" stop-color="#ffe9f4"/><stop offset="1" stop-color="#e6d6ff"/></radialGradient></defs><path d="M20 35C8 27 3.5 21 3.5 14.2 3.5 9 7.4 5 12.3 5c3.3 0 5.9 1.8 7.7 4.4C21.8 6.8 24.4 5 27.7 5c4.9 0 8.8 4 8.8 9.2C36.5 21 32 27 20 35Z" fill="url(#bff)" stroke="#22163b" stroke-width="2"/><path d="M20 31.5C10.5 25 7 20.2 7 14.6 7 11 9.6 8.4 12.6 8.4" fill="none" stroke="url(#bfi)" stroke-width="2.6" stroke-linecap="round"/><path d="M11 13c.8-1.6 2-2.4 3.6-2.4" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg><span><span class="brand-name">Nube Nácar</span><span class="brand-sub">Nail Studio</span></span></a>
+        <p style="margin-top:14px;max-width:36ch">Manicura, pedicura y extensiones con acabados de nácar. Kit esterilizado y garantía de 7 días en cada set.</p>
+      </div>
+      <div><h4>Explora</h4><ul><li><a href="servicios.html">Servicios y precios</a></li><li><a href="disena.html">Diseña tu set</a></li><li><a href="disena.html#galeria">Galería</a></li><li><a href="servicios.html#club">Club Nube</a></li></ul></div>
+      <div><h4>Estudio</h4><ul><li><a href="nosotras.html">Nosotras</a></li><li><a href="nosotras.html#higiene">Higiene</a></li><li><a href="reservar.html#preguntas">Preguntas</a></li><li><a href="reservar.html#contacto">Cómo llegar</a></li></ul></div>
+      <div><h4>Contacto</h4><ul><li>(555) 214 0099</li><li>hola@nubenacar.com</li><li>@nubenacar</li><li>Lun a sáb 10:00 a 20:00</li></ul></div>
+      <div class="footer-bottom"><span>© <span data-year>2026</span> Nube Nácar Nail Studio</span><span>Plantilla de demostración con contenido ficticio.</span></div>
+    </div>
+  </div>
+</footer>
+
+<button class="bg-toggle" id="bg-toggle" type="button" aria-pressed="true">
+  <span class="ic" aria-hidden="true"><svg class="pause" viewBox="0 0 14 14"><path d="M4 2.5v9M10 2.5v9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><svg class="play" viewBox="0 0 14 14"><path d="M4 2.2 11.5 7 4 11.8Z" fill="currentColor"/></svg></span>
+  <span class="txt">Pausar fondo</span>
+</button>
+<div class="toast" id="toast" role="status"></div>
+</body>
+</html>

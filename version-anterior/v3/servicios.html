@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Servicios y precios · Nube Nácar Nail Studio</title>
+<meta name="description" content="Manicura, gel, rubber base, polygel, acrílico, pedicura spa y nail art. Carta de precios con tiempos.">
+<meta name="theme-color" content="#c9c0ec">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20d%3D%22M20%2035C8%2027%203.5%2021%203.5%2014.2%203.5%209%207.4%205%2012.3%205c3.3%200%205.9%201.8%207.7%204.4C21.8%206.8%2024.4%205%2027.7%205c4.9%200%208.8%204%208.8%209.2C36.5%2021%2032%2027%2020%2035Z%22%20fill%3D%22%23ffd6e7%22%20stroke%3D%22%23d6246e%22%20stroke-width%3D%222.6%22%2F%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script defer src="assets/js/data.js"></script>
+<script defer src="assets/js/nails.js"></script>
+<script defer src="assets/js/main.js"></script>
+<script defer src="assets/js/servicios.js"></script>
+</head>
+<body class="page-servicios">
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<!-- Fondo: tu video en loop, fijo detrás de todo el sitio -->
+<div class="bg" aria-hidden="true">
+  <video id="bg-video" muted loop playsinline preload="auto" poster="assets/img/fondo.jpg" disablepictureinpicture>
+    <source src="assets/video/fondo.mp4" type="video/mp4">
+    <source src="assets/video/fondo.webm" type="video/webm">
+  </video>
+</div>
+
+<header class="topbar" id="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="index.html" aria-label="Nube Nácar Nail Studio, inicio">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="bti" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f07fbd"/><stop offset=".35" stop-color="#7fd3ef"/><stop offset=".65" stop-color="#f2cf6a"/><stop offset="1" stop-color="#9b7cf2"/></linearGradient><radialGradient id="btf" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#fff"/><stop offset=".6" stop-color="#ffe9f4"/><stop offset="1" stop-color="#e6d6ff"/></radialGradient></defs><path d="M20 35C8 27 3.5 21 3.5 14.2 3.5 9 7.4 5 12.3 5c3.3 0 5.9 1.8 7.7 4.4C21.8 6.8 24.4 5 27.7 5c4.9 0 8.8 4 8.8 9.2C36.5 21 32 27 20 35Z" fill="url(#btf)" stroke="#22163b" stroke-width="2"/><path d="M20 31.5C10.5 25 7 20.2 7 14.6 7 11 9.6 8.4 12.6 8.4" fill="none" stroke="url(#bti)" stroke-width="2.6" stroke-linecap="round"/><path d="M11 13c.8-1.6 2-2.4 3.6-2.4" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg>
+      <span><span class="brand-name">Nube Nácar</span><span class="brand-sub">Nail Studio</span></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html" aria-current="page">Servicios</a>
+      <a href="disena.html">Diseña tu set</a>
+      <a href="nosotras.html">Nosotras</a>
+      <a class="btn btn-pink" href="reservar.html">Reservar cita</a>
+    </nav>
+    <a class="btn btn-pink btn-sm" href="reservar.html">Reservar cita</a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="contenido">
+<section class="page-hero" data-sky>
+    <div class="page-hero-grid">
+      <div class="page-hero-card">
+        <nav class="crumbs" aria-label="Ruta"><a href="index.html">Inicio</a><span aria-hidden="true">/</span><span aria-current="page">Servicios</span></nav>
+        <h1>Servicios y <span class="hl">precios</span></h1>
+        <p class="lede">Precios por set con impuestos incluidos. Los tiempos son aproximados y dependen del largo y del diseño que elijas.</p>
+        <div class="facts"><span class="fact" style="--c:var(--mint-soft)">Con cita</span><span class="fact" style="--c:var(--pink-soft)">Garantía 7 días</span><span class="fact" style="--c:var(--butter-soft)">Tarjeta, efectivo o transferencia</span></div>
+      </div>
+      <div class="page-hero-art float-set" data-nails="ovalada media fresa glazed" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="panel" aria-labelledby="t-cats">
+    <div class="wrap">
+      <div class="sec-head split">
+        <p class="eyebrow">Lo que hacemos</p>
+        <h2 id="t-cats">Cuatro especialidades, <span class="hl pink">un mismo cuidado</span></h2>
+        <p class="sec-lede">Todos los servicios incluyen limpieza de cutícula, hidratación y garantía de 7 días. Si no sabes qué elegir, el diagnóstico es gratis.</p>
+      </div>
+      <div class="svc-grid">
+        <article class="svc card rise" id="manicura">
+          <div class="svc-art" data-art="manicura" style="--art:var(--peach-soft)"></div>
+          <h3>Manicura</h3>
+          <p>Gel semipermanente, rubber base para nivelar tu uña natural o esmalte tradicional.</p>
+          <ul class="svc-list"><li>Gel semipermanente</li><li>Rubber base nivelador</li><li>Manicura spa con mascarilla</li></ul>
+          <p class="svc-meta"><span>30 a 75 min</span><a class="link-arrow" href="reservar.html?servicio=gel">Reservar <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+        </article>
+        <article class="svc card rise" id="extensiones">
+          <div class="svc-art" data-art="extensiones" style="--art:var(--lilac-soft)"></div>
+          <h3>Extensiones</h3>
+          <p>Polygel, acrílico esculpido o soft gel, con la estructura correcta para que no se levanten.</p>
+          <ul class="svc-list"><li>Polygel</li><li>Acrílico esculpido</li><li>Soft gel con tips</li></ul>
+          <p class="svc-meta"><span>90 a 120 min</span><a class="link-arrow" href="reservar.html?servicio=polygel">Reservar <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+        </article>
+        <article class="svc card rise" id="pedicura">
+          <div class="svc-art" data-art="pedicura" style="--art:var(--butter-soft)"></div>
+          <h3>Pedicura</h3>
+          <p>Pedicura spa con exfoliación, parafina tibia y masaje. El gel en pies dura hasta 5 semanas.</p>
+          <ul class="svc-list"><li>Pedicura express</li><li>Spa con parafina</li><li>Gel en pies</li></ul>
+          <p class="svc-meta"><span>40 a 70 min</span><a class="link-arrow" href="reservar.html?servicio=pedi-spa">Reservar <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+        </article>
+        <article class="svc card rise" id="arte">
+          <div class="svc-art" data-art="arte" style="--art:var(--pink-soft)"></div>
+          <h3>Nail art</h3>
+          <p>Cromo, perla, glazed, aura, francés y pintura a mano alzada. Trae tu referencia.</p>
+          <ul class="svc-list"><li>Efectos cromo y perla</li><li>Francés y baby boomer</li><li>Diseños a mano alzada</li></ul>
+          <p class="svc-meta"><span>+10 a 40 min</span><a class="link-arrow" href="disena.html">Diseñar <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel lilac" id="precios" aria-labelledby="t-precios">
+    <div class="wrap">
+      <div class="sec-head split">
+        <p class="eyebrow lilac">Carta</p>
+        <h2 id="t-precios">Precios claros, <span class="hl">sin sorpresas</span></h2>
+        <p class="sec-lede">El precio final se confirma en el diagnóstico, antes de empezar. Si tu diseño cambia de precio, te lo decimos primero.</p>
+      </div>
+      <div class="prices">
+        <div class="menu card rise">
+          <div class="menu-head"><h3>Temporada otoño 2026</h3><p>Impuestos incluidos</p></div>
+          <div class="menu-cols" id="menu-cols"></div>
+        </div>
+        <div class="side-cards">
+          <article class="club rise" id="club">
+            <p class="eyebrow">Membresía</p>
+            <h3>Club Nube</h3>
+            <p class="club-price">$890<small>al mes</small></p>
+            <ul>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5 8 14.5 16 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Dos servicios de gel o rubber base al mes</li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5 8 14.5 16 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>10% de descuento en nail art y extras</li>
+              <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5 8 14.5 16 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Reserva prioritaria los sábados</li>
+            </ul>
+            <a class="btn" href="reservar.html?servicio=gel&amp;nota=Me%20interesa%20el%20Club%20Nube.">Quiero unirme</a>
+          </article>
+          <article class="gift card rise">
+            <p class="eyebrow butter">Tarjeta de regalo</p>
+            <h3>Regala uñas bonitas</h3>
+            <p>Desde $300, digital o impresa en papel perlado. Se puede usar en cualquier servicio durante 6 meses.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" id="proceso" aria-labelledby="t-proceso">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Tu cita, paso a paso</p>
+        <h2 id="t-proceso">Así trabajamos <span class="hl">cada set</span></h2>
+      </div>
+      <ol class="steps">
+        <li class="step card rise"><span class="step-num" style="--c:var(--pink-soft)">1</span><span class="step-time">5 min</span><h3>Diagnóstico</h3><p>Revisamos tu uña natural, elegimos forma y largo, y te confirmamos el precio antes de empezar.</p></li>
+        <li class="step card rise"><span class="step-num" style="--c:var(--peach-soft)">2</span><span class="step-time">15 min</span><h3>Preparación</h3><p>Cutícula, limado suave y deshidratación de la lámina para que el producto se adhiera bien.</p></li>
+        <li class="step card rise"><span class="step-num" style="--c:var(--butter-soft)">3</span><span class="step-time">20 a 60 min</span><h3>Estructura y color</h3><p>Base, estructura y color en capas delgadas. Se ve natural y no se siente pesada.</p></li>
+        <li class="step card rise"><span class="step-num" style="--c:var(--mint-soft)">4</span><span class="step-time">30 a 60 s por capa</span><h3>Curado LED</h3><p>Cada capa se cura en lámpara LED de baja temperatura, sin picos de calor.</p></li>
+        <li class="step card rise"><span class="step-num" style="--c:var(--lilac-soft)">5</span><span class="step-time">5 min</span><h3>Acabado</h3><p>Top coat, aceite de cutícula y crema de manos. Sales con las uñas secas y listas.</p></li>
+      </ol>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-cta">
+      <p>¿Lista para <span class="pinky">brillar</span>?</p>
+      <a class="btn" href="reservar.html">Reservar cita <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="footer-in">
+      <div>
+        <a class="brand" href="index.html"><svg viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="bfi" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f07fbd"/><stop offset=".35" stop-color="#7fd3ef"/><stop offset=".65" stop-color="#f2cf6a"/><stop offset="1" stop-color="#9b7cf2"/></linearGradient><radialGradient id="bff" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#fff"/><stop offset=".6" stop-color="#ffe9f4"/><stop offset="1" stop-color="#e6d6ff"/></radialGradient></defs><path d="M20 35C8 27 3.5 21 3.5 14.2 3.5 9 7.4 5 12.3 5c3.3 0 5.9 1.8 7.7 4.4C21.8 6.8 24.4 5 27.7 5c4.9 0 8.8 4 8.8 9.2C36.5 21 32 27 20 35Z" fill="url(#bff)" stroke="#22163b" stroke-width="2"/><path d="M20 31.5C10.5 25 7 20.2 7 14.6 7 11 9.6 8.4 12.6 8.4" fill="none" stroke="url(#bfi)" stroke-width="2.6" stroke-linecap="round"/><path d="M11 13c.8-1.6 2-2.4 3.6-2.4" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg><span><span class="brand-name">Nube Nácar</span><span class="brand-sub">Nail Studio</span></span></a>
+        <p style="margin-top:14px;max-width:36ch">Manicura, pedicura y extensiones con acabados de nácar. Kit esterilizado y garantía de 7 días en cada set.</p>
+      </div>
+      <div><h4>Explora</h4><ul><li><a href="servicios.html">Servicios y precios</a></li><li><a href="disena.html">Diseña tu set</a></li><li><a href="disena.html#galeria">Galería</a></li><li><a href="servicios.html#club">Club Nube</a></li></ul></div>
+      <div><h4>Estudio</h4><ul><li><a href="nosotras.html">Nosotras</a></li><li><a href="nosotras.html#higiene">Higiene</a></li><li><a href="reservar.html#preguntas">Preguntas</a></li><li><a href="reservar.html#contacto">Cómo llegar</a></li></ul></div>
+      <div><h4>Contacto</h4><ul><li>(555) 214 0099</li><li>hola@nubenacar.com</li><li>@nubenacar</li><li>Lun a sáb 10:00 a 20:00</li></ul></div>
+      <div class="footer-bottom"><span>© <span data-year>2026</span> Nube Nácar Nail Studio</span><span>Plantilla de demostración con contenido ficticio.</span></div>
+    </div>
+  </div>
+</footer>
+
+<button class="bg-toggle" id="bg-toggle" type="button" aria-pressed="true">
+  <span class="ic" aria-hidden="true"><svg class="pause" viewBox="0 0 14 14"><path d="M4 2.5v9M10 2.5v9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><svg class="play" viewBox="0 0 14 14"><path d="M4 2.2 11.5 7 4 11.8Z" fill="currentColor"/></svg></span>
+  <span class="txt">Pausar fondo</span>
+</button>
+<a class="btn btn-pink fab" id="fab" href="reservar.html">Reservar cita</a>
+<div class="toast" id="toast" role="status"></div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Diseña tu set · Nube Nácar Nail Studio</title>
+<meta name="description" content="Prueba forma, largo, color y acabado de tus uñas y reserva con tu diseño.">
+<meta name="theme-color" content="#c9c0ec">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20d%3D%22M20%2035C8%2027%203.5%2021%203.5%2014.2%203.5%209%207.4%205%2012.3%205c3.3%200%205.9%201.8%207.7%204.4C21.8%206.8%2024.4%205%2027.7%205c4.9%200%208.8%204%208.8%209.2C36.5%2021%2032%2027%2020%2035Z%22%20fill%3D%22%23ffd6e7%22%20stroke%3D%22%23d6246e%22%20stroke-width%3D%222.6%22%2F%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script defer src="assets/js/data.js"></script>
+<script defer src="assets/js/nails.js"></script>
+<script defer src="assets/js/main.js"></script>
+<script defer src="assets/js/disena.js"></script>
+</head>
+<body class="page-disena">
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<!-- Fondo: tu video en loop, fijo detrás de todo el sitio -->
+<div class="bg" aria-hidden="true">
+  <video id="bg-video" muted loop playsinline preload="auto" poster="assets/img/fondo.jpg" disablepictureinpicture>
+    <source src="assets/video/fondo.mp4" type="video/mp4">
+    <source src="assets/video/fondo.webm" type="video/webm">
+  </video>
+</div>
+
+<header class="topbar" id="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="index.html" aria-label="Nube Nácar Nail Studio, inicio">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="bti" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f07fbd"/><stop offset=".35" stop-color="#7fd3ef"/><stop offset=".65" stop-color="#f2cf6a"/><stop offset="1" stop-color="#9b7cf2"/></linearGradient><radialGradient id="btf" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#fff"/><stop offset=".6" stop-color="#ffe9f4"/><stop offset="1" stop-color="#e6d6ff"/></radialGradient></defs><path d="M20 35C8 27 3.5 21 3.5 14.2 3.5 9 7.4 5 12.3 5c3.3 0 5.9 1.8 7.7 4.4C21.8 6.8 24.4 5 27.7 5c4.9 0 8.8 4 8.8 9.2C36.5 21 32 27 20 35Z" fill="url(#btf)" stroke="#22163b" stroke-width="2"/><path d="M20 31.5C10.5 25 7 20.2 7 14.6 7 11 9.6 8.4 12.6 8.4" fill="none" stroke="url(#bti)" stroke-width="2.6" stroke-linecap="round"/><path d="M11 13c.8-1.6 2-2.4 3.6-2.4" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg>
+      <span><span class="brand-name">Nube Nácar</span><span class="brand-sub">Nail Studio</span></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="disena.html" aria-current="page">Diseña tu set</a>
+      <a href="nosotras.html">Nosotras</a>
+      <a class="btn btn-pink" href="reservar.html">Reservar cita</a>
+    </nav>
+    <a class="btn btn-pink btn-sm" href="reservar.html">Reservar cita</a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="contenido">
+<section class="page-hero" data-sky>
+    <div class="page-hero-grid">
+      <div class="page-hero-card">
+        <nav class="crumbs" aria-label="Ruta"><a href="index.html">Inicio</a><span aria-hidden="true">/</span><span aria-current="page">Diseña tu set</span></nav>
+        <h1>Diseña tu <span class="hl">set</span> antes de llegar</h1>
+        <p class="lede">Combina forma, largo, color y acabado. Te mostramos el tiempo y el precio base, y lo mandamos directo a tu reservación.</p>
+        <div class="facts"><span class="fact" style="--c:var(--pink-soft)">6 formas</span><span class="fact" style="--c:var(--lilac-soft)">10 colores</span><span class="fact" style="--c:var(--butter-soft)">5 acabados</span></div>
+      </div>
+      <div class="page-hero-art float-set" data-nails="stiletto larga noche brillo cateye #c9b6ff" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="panel" id="disenador" aria-labelledby="t-disenador">
+    <div class="wrap">
+      <div class="sec-head split">
+        <p class="eyebrow">Diseñador</p>
+        <h2 id="t-disenador">Juega hasta que <span class="hl pink">te encante</span></h2>
+        <p class="sec-lede">¿Sin ideas? Toca “Sorpréndeme” o elige un diseño de la galería de abajo para empezar desde ahí.</p>
+      </div>
+      <div class="studio card">
+        <div class="studio-preview">
+          <button class="btn btn-white btn-sm random-btn" type="button" id="random">Sorpréndeme</button>
+          <div class="board" id="board" aria-hidden="true"></div>
+          <div class="board-shelf" aria-hidden="true"></div>
+          <p class="studio-caption" id="studio-caption" aria-live="polite">Almendra media en Lila nube, cromo perla</p>
+          <div class="studio-est">
+            <span class="pill">Técnica <strong id="est-tech">Polygel</strong></span>
+            <span class="pill">Tiempo <strong id="est-time">105 min</strong></span>
+            <span class="pill">Desde <strong id="est-price">$700</strong></span>
+          </div>
+        </div>
+        <form class="studio-controls" id="studio" onsubmit="return false">
+          <fieldset class="ctl"><legend>Forma <output id="out-shape">Almendra</output></legend><div class="chips" id="shape-chips"></div></fieldset>
+          <fieldset class="ctl"><legend>Largo <output id="out-length">Medio</output></legend><div class="chips" id="length-chips"></div></fieldset>
+          <fieldset class="ctl"><legend>Color <output id="out-color">Lila nube</output></legend><div class="swatches" id="swatches"></div></fieldset>
+          <fieldset class="ctl"><legend>Acabado <output id="out-finish">Cromo perla</output></legend><div class="chips" id="finish-chips"></div></fieldset>
+          <div class="studio-actions">
+            <button class="btn btn-pink" type="button" id="use-design">Reservar con este diseño <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <p>El precio final se confirma en el diagnóstico.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel blush" id="galeria" aria-labelledby="t-galeria">
+    <div class="wrap">
+      <div class="sec-head split">
+        <p class="eyebrow">Galería</p>
+        <h2 id="t-galeria">Lo más pedido <span class="hl">esta temporada</span></h2>
+        <p class="sec-lede">Ocho sets que nuestras clientas repiten. Ábrelos en el diseñador para cambiarles lo que quieras.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filtrar diseños" id="filters">
+        <button type="button" data-filter="todos" aria-pressed="true">Todos</button>
+        <button type="button" data-filter="minimal" aria-pressed="false">Minimal</button>
+        <button type="button" data-filter="efectos" aria-pressed="false">Cromo y efectos</button>
+        <button type="button" data-filter="arte" aria-pressed="false">Arte a mano</button>
+      </div>
+      <div class="looks" id="looks"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-cta">
+      <p>¿Lista para <span class="pinky">brillar</span>?</p>
+      <a class="btn" href="reservar.html">Reservar cita <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="footer-in">
+      <div>
+        <a class="brand" href="index.html"><svg viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="bfi" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f07fbd"/><stop offset=".35" stop-color="#7fd3ef"/><stop offset=".65" stop-color="#f2cf6a"/><stop offset="1" stop-color="#9b7cf2"/></linearGradient><radialGradient id="bff" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#fff"/><stop offset=".6" stop-color="#ffe9f4"/><stop offset="1" stop-color="#e6d6ff"/></radialGradient></defs><path d="M20 35C8 27 3.5 21 3.5 14.2 3.5 9 7.4 5 12.3 5c3.3 0 5.9 1.8 7.7 4.4C21.8 6.8 24.4 5 27.7 5c4.9 0 8.8 4 8.8 9.2C36.5 21 32 27 20 35Z" fill="url(#bff)" stroke="#22163b" stroke-width="2"/><path d="M20 31.5C10.5 25 7 20.2 7 14.6 7 11 9.6 8.4 12.6 8.4" fill="none" stroke="url(#bfi)" stroke-width="2.6" stroke-linecap="round"/><path d="M11 13c.8-1.6 2-2.4 3.6-2.4" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg><span><span class="brand-name">Nube Nácar</span><span class="brand-sub">Nail Studio</span></span></a>
+        <p style="margin-top:14px;max-width:36ch">Manicura, pedicura y extensiones con acabados de nácar. Kit esterilizado y garantía de 7 días en cada set.</p>
+      </div>
+      <div><h4>Explora</h4><ul><li><a href="servicios.html">Servicios y precios</a></li><li><a href="disena.html">Diseña tu set</a></li><li><a href="disena.html#galeria">Galería</a></li><li><a href="servicios.html#club">Club Nube</a></li></ul></div>
+      <div><h4>Estudio</h4><ul><li><a href="nosotras.html">Nosotras</a></li><li><a href="nosotras.html#higiene">Higiene</a></li><li><a href="reservar.html#preguntas">Preguntas</a></li><li><a href="reservar.html#contacto">Cómo llegar</a></li></ul></div>
+      <div><h4>Contacto</h4><ul><li>(555) 214 0099</li><li>hola@nubenacar.com</li><li>@nubenacar</li><li>Lun a sáb 10:00 a 20:00</li></ul></div>
+      <div class="footer-bottom"><span>© <span data-year>2026</span> Nube Nácar Nail Studio</span><span>Plantilla de demostración con contenido ficticio.</span></div>
+    </div>
+  </div>
+</footer>
+
+<button class="bg-toggle" id="bg-toggle" type="button" aria-pressed="true">
+  <span class="ic" aria-hidden="true"><svg class="pause" viewBox="0 0 14 14"><path d="M4 2.5v9M10 2.5v9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><svg class="play" viewBox="0 0 14 14"><path d="M4 2.2 11.5 7 4 11.8Z" fill="currentColor"/></svg></span>
+  <span class="txt">Pausar fondo</span>
+</button>
+<a class="btn btn-pink fab" id="fab" href="reservar.html">Reservar cita</a>
+<div class="toast" id="toast" role="status"></div>
+</body>
+</html>
